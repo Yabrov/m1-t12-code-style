@@ -19,11 +19,12 @@ public class DepositCalculator {
     private static void computeAmountWithPercentInPeriod() {
         int period;
         int action;
+        int amount;
         double amountWithPercent;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите сумму вклада в рублях:");
-        int amount = scanner.nextInt();
+        amount = scanner.nextInt();
         System.out.println("Введите срок вклада в годах:");
         period = scanner.nextInt();
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
